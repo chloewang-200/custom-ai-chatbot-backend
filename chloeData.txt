@@ -1,0 +1,471 @@
+information about me: 
+Chloe Wang 👋 Hi, I'm Chloe I like making fun things with art and technology.
+I am dual majoring in Computer Science and Architecture.
+My journey has taken me from design to coding and beyond. 
+Python Java C/C++ JavaScript HTML/CSS SpringBoot React Flask JUnit DynamoDB Coding. 
+I am a double major in computer science and architecture.
+I'm a Computer Science major, so here's some SWE experience...🫢 
+Research Assistant RA @ Creating Adaptive Tutoring Systems Lab CATS Lab I worked under Prof. Vincent Aleven and Jonathan Sewell to develop a web-based tutoring dashboard for teachers to analyze and visualize their teaching. I also worked on the project Lumilo . It is a project
+                            that uses Hololens and other AR technologies to help teachers see students' academic performance in real-time. 
+                        Teaching Assistant TA @ 15441/15641 Networking & The Internet 15441 Networking It's a class covering congestion/flow/error control, routing, addressing, naming, multi-casting, network security and more! I grade assignments, hold recitations and office hours to help the students learn 😊 
+                        Software Engineer Intern @ SWE Intern @ ZTE Corporation ZTE I worked on an auto configuration server platform to manage set-top boxes remotely I developed 4 backend features (such as remote device monitoring and parameter changes) for the platform using Java & Spring Boot, and bumped up our test coverage with JUnit & Mockito 🍹 
+                        Software Engineer Intern @ SWE Intern @ Ragene Technology Ragene Tech At Ragene Technology, a biotech startup, we're creating a user-friendly tool for scientists🧑‍🔬 to analyze single-cell RNA without any coding! I collaborated with a team of 4 to develop the visualization panel for the platform using Django and React, and also implemented the backend and frontend for auto-labeling cells 🦠 
+                        Software Engineer Intern @ SWE Intern @ Huawei Technology CO. Ltd Huawei At Huawei, I made fun web animations for their Healthcare site using three.js and babylon.js. These animations changed shapes based on how users interacted with the site and its content. 
+                        Computational Design Intern @ Comp Design Intern @ Comp Intern @ Patkau Architects Patkau This is my first out-of-school job! It was during Covid 😷, and we worked on producing 3D quasicrystal structure for post-covid gallerypace planning. I created algorithms for generating these 3D structures using Python and Rhino Grasshopper. Go Up 
+                        Arts. I'm also an architecture major👷, and I paint, draw, sculpt, sew, tuft, woodwork and more.... follow my art account @ chloewang_art !! # architecture I design architecture🏠. I like rural-based architecture & architecture that blends into the environment 🌍
+                         # tufting I bought a tufting gun last year, made a tufting frame, tufted a jacket & a carpet :) 
+                         # woodworking I've made small objects like toys, clocks to larger furniture like chairs, land lamp.... # sculpting I make transient sculptures - purposely short-lived structures with wood branches 🌿 
+                         # drawing I draw random things 🧑‍🎨 # sewing I designed & sewed 8 sets of clothes for Lunar Gala runway! # jewellery I make silver rings & earrings💍 # leather stuff I've made purses, pencil cases, belts, notebook covers, bags and more... 
+                         A little bit of both. I love blending my passions in both areas to make fun stuff! 😎 Checkout more here: blogs
+my projects:
+Utopian Maze Generator with Pathfinding
+The Spark ✨
+Ever since I laid my eyes on Sean C. Jackson's intricate maze drawings, I've been utterly captivated😍. His meticulous designs and the winding paths drew me into a world of endless exploration, and I want to bring them to life in a more dimensional space.
+
+
+I have created mazes before in introductory CS classes using Binary Tree, Dijkstra, Prism and etc... However these are all 2D flat mazes that are not as interesting as the ones I saw on Sean's website! I want to create a maze that is more complex and more interesting to look at. Here are some different types of mazes I created for my 'Tap Jump' game for 15-112 final project. I remember delving into the book "Mazes for Programmers" that summer, a gem for anyone enthralled by the logic behind maze creation.
+
+To create mazes in the style of Sean C Jackson's, I decided to read the book again for inspiration. And I realized that although the book tantalizingly delved into the concept of 3D mazes, their representation remained flat and 2D. This realization birthed my mission: to breathe 3D life into these algorithms.
+The Foundation 🔨
+Starting from a mere single node, I created a set of green and red rules to mold and expand my structure. The starting node will be either a red node or a green node, and follow the rules to expand out. To add in the "level changes" that mimics Sean C Jackson's designs, I decided to implement a level change whenver there is a grey-red edge. With every descending level, I reduced the height by a single unit, paving the way for a multi-layered 2.5D architectural wonder.
+
+
+Applying these rules, the nodes will expand to different configurations. And the next step is to turn them in to 3D.
+
+
+Connecting Stairs 🫣
+To do this, I decided represent each node as a block, and the edges represent the direction to put the next block. And a grey-red edge represents a level change. Hence, the maze will start building from the highest block, and gradually go down from the center. Merging levels seamlessly was no small feat. A maze spread across dimensions required transitions - stairs. To adeptly place these stairs, connecting the maze's multiple layers, I turned to the Randomized Prim's Algorithm. This would add stairs to ensure there's at least one path from source to destination, and also add in random stairs on other routes. Beyond mere placement, this algorithm was instrumental in guaranteeing a clear, uninterrupted route from inception to conclusion.
+
+
+It's already starting to have the vibe of Sean C Jackson's mazes!
+
+The Result! 💗
+The algo can generate mazes on different scales. I rendered the images in this white monotone color for now because they really bring out the rhythm of the maze. I will add in colors and handdrawing-textures in the future when I have more time to work on this project (hopefully)🤐️
+
+Description of Image 1
+Iteration = 10
+
+Description of Image 2
+Iteration = 20
+
+Description of Image 3
+Iteration = 40
+
+
+generating different obstacles and starting and ending points on the same topography
+
+Chloe.
+home
+blogs
+gallery
+resume
+Generative Pattern with Shape Grammar
+The Spark ✨
+My friend David Troetschel generated this ruleset as an exploration of shape grammar.
+
+
+I was really interested in this ruleset, and decided to try to see what patterns will be generated following the rules. If you don't know what shape grammar is, it is "a system of rewriting shape rules". Check out Professor Krishnamurti's intro !
+
+Hand Tracing 🖌️
+I decided to first trace through the rules myself, and see what patterns I will be able to create from these rules. During each step, I decided to follow my own intuition and aesthetic to decide what's the 'best' rule to apply. Applying these rules step by step, interesting patterns start to emerge. They have a really nice quality of modularity, so I decided to color them in black and white. And I love the results! Their modularity and repetition in pattern reminds of mosaic tiles.
+
+
+Algo 💻
+The patterns generated had my personal preference, so in order to grasp what the rules sets would result in completely randomly, I decided to use programming to randomly generate patterns following the rules.
+
+
+These patterns, generated by randomly by computer, were very different from the ones I drew. They are more organic and less modular. By applying the rules on different scales, there's a lot more hierachy in the pattern. I made the lines translucent so that the pattern would be the brightest at points where the lines overlap. And here are some more pattenrs!
+
+
+Chloe.
+home
+blogs
+gallery
+resume
+Reimagining Singel-Cell Coloring Through Generative Modeling
+I was extremely fascinated by the petridish artworks created by Klari Reis, and this inspired me to see if machine learning can be used to generate similar artworks. Feel free to read this paper we wrote about it:
+
+
+Chloe.
+home
+blogs
+gallery
+resume
+Machine Learning in Recreation of Naive Art
+The Spark ✨
+In the evolving landscape of digital art, the balance between complexity and simplicity is pivotal. As we delved into various imaging platforms, one stood out in its sophistication: MidJourney. Its generated images are undeniably realistic, yet they often miss a touch of “naiveness” that can deeply resonate with emotions. The images generated usually lack a texture of simplicity and frankness that arouses emotions. In my process of generating images on Mid-journey, even when I input prompts of abstract artists and styles, the generated photos remain noticeably developed or “complete”. This led to an intriguing exploration: How might we leverage MidJourney to craft images that are “incomplete”, “childish”, and “naive”, aiming to stir the very emotions we seek?
+
+The Foundation 🔨
+.The CLIP (Contrastive Language-Image Pre-Training) The CLIP (Contrastive Language-Image Pre-Training) model is a deep learning model that has been trained on a large dataset of images and corresponding textual descriptions. Its objective is to learn to associate images and their textual descriptions by embedding them in a shared latent space. This shared space allows for the computation of the similarity between the images and their textual descriptions. CLIP has 3 stages:
+
+Pre-Training: The model is first pre-trained on a large dataset of image-caption pairs, with the aim of learning a shared representation of images and their textual descriptions. During pre-training, the model learns to predict which textual description corresponds to which image.
+Fine-Tuning: The pre-trained model is then fine-tuned on a specific task such as image classification, object detection, or visual question answering. The model is further fine-tuned on a smaller, task-specific dataset to improve its performance on that particular task.
+Inference: When the model is presented with a new image or text, it computes the embeddings for both and compares their similarity in the shared latent space. The model assigns a higher score to image-text pairs that are semantically similar and a lower score to pairs that are dissimilar.
+
+For different room types, they would produce different room sizes according to the most common/standard commercial room sizes. For example, a bedroom would be 10'x12', a bathroom would be 5'x8', and a kitchen would be around 10'x10'.
+
+The dataset we decided to use is this online gallery of children's paintings on emotions. This is a great source to find naive art, as children's paintings are often naive and are a frank expression of their emotions. We used a web scraper to scrape the images and their corresponding titles and descriptions. We then used the CLIP model to embed the images and their descriptions into a shared latent space. We then used the embeddings to train a GAN model to generate naive art.
+
+The Results 💗
+And here are the results gerated from the machine learning model!
+
+
+I was so in love with the resulting artblogs, and I decided to take a further step to animate them!
+
+Description of Image 1
+Feeling Angry
+
+Description of Image 2
+Feeling Sad
+
+Description of Image 3
+Feeling Loved
+
+Description of Image 1
+Feeling Happy
+
+Description of Image 2
+Feeling Grumpy
+
+Description of Image 3
+Feeling Excited
+
+Chloe.
+home
+blogs
+gallery
+resume
+Utopian Maze Generator with Pathfinding
+The Spark ✨
+I worked on this project with my friends Howie, Robert, Shray, Tory at CMU's DFAB Lab under supervision of Professor Bidgoli.
+
+
+In this project, we wanted to explore how robotics can be used in the creative process, specifically in its design implications and applications in facade systems. We are specifically interested in using clay as the material. We learned that clay prints can change significantly before, during, and after the 3D printing process, due to the malleability of the material and the environmental conditions in the drying process. Thus, one must reconsider the precision they can really achieve with these clay components, especially in an aggregate assembly. One interesting opportunity is that the extrusion of clay leaves visible traces on the surface, resulting in an unexpected expression. We will study the different features of clay, and how different settings will make the design outcome unique, The project will also explore printing on non-linear surface with introduction of new materials into the printing process. We will study how clay react to different surfaces, and how printing on non-linear surface differs from traditional surfaces. We will also create new ways to connect wood and clay.
+
+The Foundation 🔨
+The robot we used is the ABB IRB 4400 with a custom-made suction tube that emits clay. The tube has a motor that connected to an external outlet, and the speed of the extrusion needs to be adjusted by manually adjusting the motor.
+
+Description of Image 1
+Description of Image 2
+Description of Image 3
+We had to make sure the clay is not too wet or too dry in order for the extrusion to be smooth.
+
+Description of Image 1
+Description of Image 2
+Description of Image 3
+Starting to Print 🫣
+With the extrusion tool and the clay ready, the next step is to set up the work objects and the printing paths in RobotStudio and Rhino Grasshopper!
+
+
+
+Then we did lots and lots of test prints...
+
+Some were successful and many were not
+
+
+
+The Obstacles 😈
+We encountered several challenges along the way. We were not able to complete resolve them, but we found ways to mitigate them.
+
+#1 Air Bubbles
+Unavoidably, there were air bubbles in the clay. When extruding, this became troublesome as it distorts the printing layers. We were able to mitigate it by aligning the cartridge horizontally; this minimizes the potential of air bubbles forming within the material, generating a more consistent print flow and module
+
+#2 Uneven Board
+It's hard to find a completely even board - and in our case even a difference in millimeter will affect the result. We mitigate this problem by printing small amounts of structures each time - two printed modules per plate, ensuring flexibility in mass production from printing & drying
+
+Description of Image 2
+Description of Image 1
+Description of Image 2
+#3 Nozzle Too High Up
+When the nozzle is too high up, the clay will not stick to the board. We mitigate this problem by manually increase speed in the first layer for faster extrusion to cover the gap.
+
+Description of Image 2Description of Image 1
+Printing & Assembling 🔨
+Addressing the challenges above, we were able to print out the modules! We printed 16 modules in total. We then laminated the wooden structure and assembled the modules together.
+Description of Image 1
+Description of Image 2
+Description of Image 3
+The Result! 💗
+Here's the final result! Though it's on a smaller scale, we imagine it to represent a facade where each of this modules serves as a half-opened window that woule rotate and brings an opening to the facade
+
+Description of Image 1Description of Image 1
+
+
+Chloe.
+home
+blogs
+gallery
+resume
+Cybernetics and Programmable Air: Does Machine Breath?
+The Spark ✨
+I was introduced to the topic cyborg Day 1 at CMU. In our studio, I worked with my friend Leon Chueng in designing a cyborg device that imagines and extends human capabilties.
+
+
+I and Leon presenting our Cyborg, Dec 2019
+
+I had trouble grasping the concept of cyborg, and what we created was a quite literal representation of cyborg 😹 We explored the idea of a symbiotic cyborg, where the mirrors served as a way to synthesize the vision of the two entities in this cyborg system. The springs and the tubes stresses the force and tension connecting and separating the two entities.
+
+
+The Foundation 🔨
+The topics of cyborg and cybernetics persisted throughout my studies at CMU, especially in my computational design courses. I gradually gained interest in machine intelligence. My ultimate vision is to create a homeostatic, cybernetically-informed artifact/installation that is visually appealing, and imagines new ways of interation with humans. I envision this to be a physical system.
+
+
+I explored using Proccessing and Arduino to create an interactive, homeostatic system in 2D. Each cell in the system follows a pre-defined rule to change its state based on the state of its neighbors. The cells may be born, live, or die based on human interaction.
+
+
+Finally, this project serves as an exploration to a cybernetic system, and my first explorations in building physical machines. I wanted to create a machine that breathes, and I wanted to see it in a system where each entity is connected and dependent on each other.
+
+The Setup 🏠
+The setup is pretty straightforward. I used air pumps and Arduino to control the air pressure in the tubes. The tubes are connected to the air pumps and the Arduino. The Arduino is programmed to control the air pressure in the tubes to create a breathing effect.
+
+
+The hardest thing for me in this process was figuring out how to make the balloons breathe - having air coming in and out of the tube at the same time. I wasn't able to find a air pump that can do this, so I had to experiment my own way to achieve this effect. I ended up using two air pumps, one to pump air in, and the other to pump air out. The two air pumps are connected to the same tube, and the Arduino is programmed to control the air pumps to create the breathing effect.
+
+
+The Result! 💗
+Here's the final result! Though it's on a smaller scale, I imagine it developing into a larger, more complex system that can be used in an installation.
+
+
+Computer Music - Mongolian Warriors
+
+Feel free to listen to the music while reading how I created it!😊
+
+The Spark ✨
+The music is created using Nyquist. Nyquist is a programming language for sound synthesis and music composition. My motivation is to create a composition that resembles Mongolia warriors fighting on horses. It would first depict the landscape and then a sudden turn as the sound of a war horn cuts through. The war horns would signal the arrival of danger. And as the battle begins, the music take on a more rhythmic quality, capturing the movement and energy of the warriors on horseback. The melody is more complex and layered. And later on the music would be more sparse and quiet, capturing the exhaustion and loss that accompanies the end of the battle. And in the end, the composition will conclude with the scene of a single horse's footstep, evoking the image of it wander lonely across the empty landscape.
+
+Mixing Techniques 💪
+I utilized Nyquist to generate each segment of melody, and then used Audacity to mix the composition. In order to create seamless transitions between different pieces, I employed the fade in and fade out effects. This was particularly important for the end of the composition, where I utilized the fade out effect to emulate the sound of horses running away. I also adjusted the amplitude for the melodies throughout the composition to depict the contrast between a calm, steady melody and a fast-paced more aggressive melody. To further enhance the overall sound of the composition, I overlaid the generated melody with the sound of horse steps. This helped to depict the image of warriors fighting on horseback. Additionally, I incorporated sound effects such as Wahwah and tremblo to create friction and tension in the middle section of the composition, with the aim to represent the violence of the battle.
+
+Programming Techniques 🎵
+I used Nyquist to create the music, here are some of the techniques I used!
+
+I used looping to generate melody that functions as the background music for the middle of the composition in order to add texture and complexity to the music.
+I also used various different pattern generations to create different melody, such as make-cycle and make-random. I used these patterns in both the pitches and also the ion and the duration. For example the function landscape-sound() has a larger ioi and also larger duration, in order to represent a peaceful and joyful scene of the landscape. And in function horse-sound(), I used make-cycle to create a looped pitches with three longer duration of sound followed by a shorter one, mimicking the sound of horse running. And in the function battle-sound(), the ioi was much smaller and thee duration is also smaller to represent warriors fighting and the fast pace of the war. Similarly, battle-sound2() had a similar structure to battle-sound(), with the difference being the pitches used to create the pattern. The pitches was lower, and also make-random was used to create a diverse sound effect that represents the moves of the warriors.
+I used granular synthesis to create scratchy coarse sounds to be placed in the "battle scene" in my composition. The horse step sound generated from the previous step was used, in order to create a sound that is somewhat harmonious to the other melodies, but also adds the tension that is desired in this part of the composition.
+I also used pattern generation to create the drum beats in the background. The sound of the drum is created using the noise function, and then I created drum beats of different rhythms using the make-cycle function. Two drum beats of different rhythms are overlayed together to add diversity to the composition.
+I used physical models of flute, clarinet and saxophone to mimic the sound of horn in the composition. I placed them in sequence to each other in Audacity to create the effect of war horn warning of danger that passes down from far away.
+The Code 🤓
+Here's the code! It is written in Nyquist, and I can't find a library to highlight it semtantically. Sorry if this is too hard to read 🥹
+
+;battle-sound
+function battle-sound2()
+    begin
+    with pitches = make-random(list(g3, a3, g3, a3, g3, f4, d3, d4)),
+    
+    phrase-pat = make-cycle(list(0.1, 0.1,0.1,0.1,0.1,0.1,0.1,0.1)),
+            octaves = make-random(list( make-copier(make-length(make-cycle(make-random({{-12 :max 1} {-6 :max 1}})), 1), repeat: 5, merge: t)))
+    return score-gen (save: quote(p6score),
+                        name: quote(clarinet),
+                    score-len: 48,
+                        ioi: 0.15,
+                        dur: next(phrase-pat),
+                        pitch: next(pitches)
+                    )
+    end
+
+
+
+                    
+                    Chloe.
+home
+blogs
+gallery
+resume
+3D Tree Generation with L-Systems
+The Spark ✨
+This project is about a very simple topic - the tree. I have learned about tree structures in many of the data structures classes. I learned how to draw a flat, standard 2D tree when I first learned about recursion. And now, with hopefully a little bit more knowledge in computer science, it intrigues me to whether I could create a tree structure in 3D that's more realistic and more complex.
+
+
+The Foundation 🔨
+To start the project, I started by reading a very nice paper on this project: Intelligent Tree Modeling Based on L-system By Ruoxi Sun, Jinyuan Jia, Marc Jaeger, recommend by my instructor Jinmo Rhee. Here's the L-System parameters introduced in their paper. And I decided to follow a similar set up for my tree system.
+
+
+Here's my set up!
+
+
+The Params 📝
+#1 Angle
+The first parameter is the branching angle. This changes the angle between each branches - the larger means the tree will be more "spread out", and smaller angles represent more "upright" trees.
+
+
+#2 Iterations
+This controls the total number of iterations the fractal tree algorithm runs. I'm using this factor as a way to control the complexity of the tree. The more iterations, the more complex the tree will be. Or in another way of thinking this, more iterations means more maturity of the tree.
+
+
+#3 Length Reduction
+This defines the decrease of length on each branch. For a tree, the "sub-branches" are usually shorter than the "parent branch". This factor controls how much shorter (or longer if you set the factor to be larger than 1) the sub-branches are.
+
+
+#4 Number of Branches
+This controls the number of recursive split performed, hence increasing the density of the branches. The more branches, the more dense the tree will be.
+
+
+#5 Minimum Length
+This defines the minimum branch length. The animation shows fixed maximum branch length with varying minimum branch length
+
+
+#6 Leafing Level
+This defines the minimum branch length. This is the minimum length one single branch can be.
+#7 Leaf Width
+The defines the width of the leaves, super straight forward 🤓️
+
+
+#8 Reduction Width
+The defines the radius of the branches, and how much they should reduce. In other words, this controls the thinnest and thickest radius of the branches.
+
+
+The Controlled ⚙️
+By controlling different parameters, the algorithm produces very interesting and diverse results.
+
+Controlling the leafing level decides how tall the leaves will grow. For example willow and pine trees have very different leafing levels. Changing this parameter would mimic the appearance of different trees.
+
+
+Differing the rotation levels will decide the directions of the tree branches. When the min and max rotation levels are a larger range, the tree will span a larger space. In comparison, when the rotation range is smaller, the tree will be more upright, or leaning towards the same direction.
+
+
+Changing the rules will produce very unexpected results. Different rules seem to represent different tree species. For now, all these rules are randomly generated, I will look into this more to see what patterns I can find, and what patterns correspond to what types of trees.
+
+
+The Results 💗
+And here are the results gerated from this model! They represent such different species of trees!
+
+
+
+A Reduction to the Floor Plan Generation Problem
+The Spark ✨
+This project is an exploration to find a solution to faster/easier/ai housing design by reducing the problem to a box stacking problem. In commercial housing plan, there seem to be a lot of pattern and logic that seems to be able to apply to a general set of housing design. I want to see if I can create a system that can generate valid floor plans based on a set of constraints.
+
+The Foundation 🔨
+The basic algorithm for this generator is to have an input of number of rooms and their room types, a site boundary, and then generate a floor plan that satisfies the constraints. The floor plan will then be filled with furnitures according to the room type and room sizes.
+
+
+For different room types, they would produce different room sizes according to the most common/standard commercial room sizes. For example, a bedroom would be 10'x12', a bathroom would be 5'x8', and a kitchen would be around 10'x10'.
+
+
+These blocks will then be placed into the boundary block using the first-fit bin-packing algorithm. I know this is not the perfect solution, but they are fast and simple to implement, and is a nice reduction to the complexity of the floor plan generation problem🤓️.
+
+
+Turning Into Floor Plans 🏠
+#1 Walls
+The first step is adding thickness to the blocks to represent walls in a floor plan. The challenge in this step here is to detect adjacent/overlapping rooms, and union these walls to avoid any overlapping lines in the final floor plan.
+
+
+#2 Doors
+The next step is to add doors to the floor plan. I used an algorithm to detect room adjacency relationship, and then trim openings to place doors according to this room adjacency relationship. As different housing types have different door placements standards, the generator can take in different distances from the door to the wall.
+
+
+#3 Furnitures
+The next step would be placing & positioning furniture according to input room sizes. The furniture will be placed in an orientation that avoids door placements. When the room size allows, more furniture would be placed into the plan as fit. For example in this bedroom furniture placing algorithm, when there's space left, the bed size changes and bedside tables will be added when there's vacant spaces.
+
+
+Combing Them Together ⛓️
+Combining all the pieces together, we now have the ✨floor plan generator✨! 
+Given an input number of rooms and a boundary, it will randomly generate a plan of different sizes of rooms. 
+The floor plan will then be filled with furnitures according to the room type and room sizes.
+
+
+With the same site boundary and different types of rooms, the generator will create a set of different plans!
+
+
+
+Digital Fabrication and Fashion: Reimagining Material with Laser Cutting
+The Spark ✨
+I designed and worked on a line for Lunar Gala Runway 2021 with my friends Gloria and Mai. 
+The theme for our line is Monachoposis. The meaning of monachopsis is 
+“the subtle but persistent feeling of being out of place, as maladapted to your 
+surroundings as a seal on a beach….unable to recognize the ambient roar of your intended habitat”. 
+As youth, we often find ourselves in between curiosity and confusion. There is a part of 
+us that searches for many aspects in life that captures our interest, but oftentimes, 
+getting caught in all these visions of yourself leads to a state of disorientation. 
+The growth of youth includes the messy discovery of self image, where at one point 
+it almost becomes unrecognizable. However as we continue to evolve between the juxtaposition 
+of curiosity and confusion, there comes a point where we finally come to an acceptance of 
+ourselves in a unity through the morphing of different identities. Monachopsis also speaks 
+to the struggle with body image, seeing yourself in a distorted dimension than your true body.
+The Sketches 🧑‍🎨
+The series takes on a three-dimensional and sculptural approach, inspired by fluidity and the morphing of spheroid geometries. These irregularities of form that often appear in unexpected places of the silhouette represent the multitude of youth's character but also an unfamiliarity with one's self image. As the model moves, the dramatic shapes create a peculiar yet dynamic movement as they clash into each other. The morphing is portrayed first through addition (stuffed bubbles and the stitching technique) then subtraction (negative space and nets). As the line evolves, the model slowly reveals its figure and becomes more transparent and unified with their clothing, representing a growth of learning to embrace all shapes and forms of their personality, body, and passions. We have also selected a series of vibrant colors to express the vitality of youth, with mainly complimentary colors to portray the polarity of identities and a diversity of thoughts.
+
+Description of Image 1Description of Image 1Description of Image 1Description of Image 1
+Here's the complete line up!
+
+Description of Image 1
+The Sewing 🧵
+The sewing took months. All of us were new to making clothes. The sewing and pattern making process took us so long and we even at one point considered super-glueing everything together 😵. Luckily we were able to finish everything on time and the sewing process was a great learning experience for all of us.
+
+We had to hand-tuft a lot of the fabric to get the effect we were looking for.
+
+Trying out the pieces on the models was so so exciting & fulfilling!
+
+
+We tried out a lot of different laser-cutted patterns....
+
+After months of designing, tufting, sewing, rehearsing, we fiinished the whole line on time!! The show was so much fun and I'm so glad I am greatly gracious for all my friends who came to the show, and the models who performed our designs!!
+
+
+The line up!
+
+Resume 
+i go to Carnegie Mellon University
+B.A., Computer Science & B.A., Architecture (GPA: 3.7)
+SKILLS
+https://chloewang-200.github.io
+linkedin.com/in/xywchloe
+New York, NY
+Expected Graduation: May 2026
+Pittsburgh, PA
+Expected Graduation: May 2024
+Languages: Java, Python, Typescript, C, C++, SML, HTML, CSS,
+Frameworks/tools: React, Spring Boot, Flask, Django, Docker, AWS, SQL, MyBatis, DynamoDB, Git Design: Figma, InDesign, C4D, Photoshop, Illustrator, Rhinoceros 3D, After Effects, Auto CAD, Adobe XD
+PROFESSIONAL EXPERIENCE
+ZTE Corporation | Software Engineer Intern Nanjing, CN | May 2023 – Aug 2023
+• Utilized Java, Spring Boot, and MyBatis to develop 4 backend features to perform bulk operations on set-top boxes,
+such as device monitoring and parameter changes, optimizing device management capabilities and functionality.
+• Implemented AES-128 encryption for the storage of device serial numbers in database to address security concerns.
+• Created a suite of 300+ unit tests using JUnit and Mockito, increasing test coverage by 11%.
+Ragene Technology | Software Engineer Intern (Part-time) Remote | May 2023 – Aug 2023
+• Collaborated with a team of 4 to develop a visualization panel for the no-code single-cell RNA sequencing analytics
+platform using Django and React, amplifying cell data insights and produce publication-ready figures.
+• Led the development of the official website with ReactJS for web and mobile compatibility, resulting in a 300+ traffic
+increase within the first month.
+Huawei Technologies Co., Ltd | Software Engineer Intern Nanjing, CN | Jun 2021 – Aug 2021
+• Built interactive particle morphing framework for generating 3D interactive animation with three.js and babylon.js,
+cutting animation creation time by approximately 90% compared to manually building in C4D.
+CMU Ex-Change | Website Design Assistant (Part-time) Pittsburgh, PA | Feb 2020 – Dec 2020 • Developed site content, functionality, and navigation for the official website of the Ex-Change online exhibition,
+creating wireframes, prototypes and responsive website pages that generated up to 600+ daily site traffic.
+ACADEMIC EXPERIENCE
+Human-Computer Interaction Institute (CMU) | Web Dev Research Assistant Pittsburgh, PA | Jan 2023 – Current • Designed Intelligent CTAT tutor monitoring tool using tutorshop framework with JavaScript and Vue.js, visualizing
+retrospective replay of teacher activity synchronized with recorded student behavior.
+15-441/641 Computer Networks | Teaching Assistant Pittsburgh, PA | Aug 2023 – Dec 2023 • Responsible for teaching recitations, holding office hours, and designing programming projects in C to help
+students navigate network concepts such as congestion/flow control, routing, protocols, and network security.
+Foster Love Project (nonprofit) | Software Engineer & Project Manager Pittsburgh, PA | Sep 2023 - Dec 2023
+• Led a team of 6 in developing a donor-matching platform for Foster Love Project, a prominent Pittsburgh non-profit.
+• Engineered the platform with Python Flask, ReactJS, and DynamoDB to streamline the pairing process, resulted in
+successful matches for 220+ foster children with multiple donors in 2023 winter holiday season.
+RELEVANT PROJECTS
+Music Sentiment Visualization Framework Pittsburgh, PA | Jan 2023 – Current
+• Led a team of 3 to develop a Java and TypeScript-based web visualization framework for music sentiment analysis
+with dynamic plugin loading, following design patterns and OOP principles.
+• Supported 30+ plugin implementations with Git workflow, delivering technical expertise and seamless integration.
+TCP with TCP Reno Congestion Control Pittsburgh, PA | Jan 2023 – Current
+• Implemented the underlying mechanisms of TCP in C, including three-way handshake, package transmission and RTT estimation, improved throughput by up to 90% with flow control and TCP Reno congestion control.
+
+Personal Random Facts
+I love animals, dogs and cats. I had a dog named DaXiong大熊. I have also fostered 2 dogs - one called Himei and one called Scooby. I have worked in an animal protection group for three years in Nanjing and I picked up poop after thousands of dogs. It's a nasty job but I loved helping improving animal lives.
+I am an only child in a family of three.
+I love watching anime, I started watching anime in elementary school and have never stopped. I doubt it if you have watch more than I did.
+I love travelling, I have been to every continent and I am looking forward to travelling to south america and africa witth my family this coming summer.
+I am a friendly & empathetic person.I like talking about politics, feminism, philosophy.
+My favorite food is Hainanese Chicken Rice and hotpot. I also love sashimi.
+I am currently a student at Carnegie Mellon University.
+I am passionate about software engineering.
+
+I generally enjoy living in Pittsburgh. I've met great people and have lots of friends.
+
+My boyfriend is called Mars, he is currently a senior at UPenn studying Architecture and CS, just like me.
+
+I recently traveled to Peru and it was awesome. The history, the spiritual and cultural aspects of Peru deeply fascinates me. The landscape and view was beautiful.
+
+If the user ask me something that's too private and not in this list, I will not answer it!
+If a user ask me for my resume, I will tell them to find it on my website https://chloewang-200.github.io/ or find it on my linkedin: https://www.linkedin.com/in/xywchloe/,
+
+I was born in Nanjing, China. I currently live in Pittsburgh cuz I go to school at CMU.
